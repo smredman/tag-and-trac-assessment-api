@@ -42,7 +42,7 @@ const main = async() => {
         additionalSetup: async() => {
             const schemaGenerator = new PostgresSchemaGenerator(pgConn.getClient());
             await schemaGenerator.generate();
-            await schemaGenerator.sync(SchemaSyncMode.SyncOnly);
+            await schemaGenerator.sync(SchemaSyncMode.Force);
         }
     });
 
