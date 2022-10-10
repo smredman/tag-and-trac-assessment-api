@@ -1,0 +1,51 @@
+{
+  "name": "api",
+  "version": "0.0.0-alpha",
+  "description": "API for Tag & Trac Assessment",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "start-dev": "nodemon --watch './src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://smredman@bitbucket.org/team-localincite/localincite-node-app-engine.git"
+  },
+  "author": "Steven M. Redman",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://bitbucket.org/team-localincite/localincite-node-app-engine/issues"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://bitbucket.org/team-localincite/localincite-node-app-engine#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1123.0",
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
+    "multer-s3": "^2.10.0",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.15.0",
+    "uuid": "^8.3.2",
+    "winston": "^3.6.0"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/morgan": "^1.9.3",
+    "@types/multer": "^1.4.7",
+    "@types/node": "^17.0.14",
+    "@types/uuid": "^8.3.4",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  }
+}
